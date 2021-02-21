@@ -1,0 +1,3 @@
+--recursive
+--reporter
+-t 5000
