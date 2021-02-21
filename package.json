@@ -1,10 +1,11 @@
 {
   "name": "lodash",
   "version": "1.0.0",
-  "description": "TDD+TS 实现lodash",
+  "description": "TDD 实现lodash",
   "main": "lodash.js",
   "scripts": {
-    "test": "mocha -r esm test/*.test.js"
+    "test": "mocha -r esm test/*.test.js",
+    "coverall": "cat coverage/lcov.info | coveralls"
   },
   "repository": {
     "type": "git",
@@ -12,7 +13,6 @@
   },
   "keywords": [
     "TDD",
-    "TS",
     "lodash"
   ],
   "author": "林仕强",
@@ -22,9 +22,10 @@
   },
   "homepage": "https://github.com/Lin47/lodash#readme",
   "devDependencies": {
-    "mocha": "^5.2.0",
+    "coveralls": "^3.1.0",
     "eslint": "^7.16.0",
     "eslint-plugin-import": "^2.22.1",
-    "esm": "^3.2.25"
+    "esm": "^3.2.25",
+    "mocha": "^5.2.0"
   }
 }
