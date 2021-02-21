@@ -1,9 +1,7 @@
 language: node_js
 node_js:
-  - 8
-install:
-  - npm install
+    - '12'
 script:
-  - npm run test
-after_success:
-  - npm run coverall
+    - npm run test
+after_script:
+  - npm run cover
